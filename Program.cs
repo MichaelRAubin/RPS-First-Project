@@ -12,12 +12,12 @@ namespace RPS
             Console.Clear();
             Console.WriteLine("Let's play Rock, Paper, Scissors!");
             Console.WriteLine("Please enter Rock, Paper, or Scissors");
-            string playerChoice = Console.ReadLine();
+            string playerChoice = Console.ReadLine().ToLower();
             while (playerChoice != "rock" && playerChoice != "paper" && playerChoice != "scissors")
             {
                 System.Console.WriteLine("This is not a valid option");
                 Console.WriteLine("Please select again!");
-                playerChoice = Console.ReadLine();
+                playerChoice = Console.ReadLine().ToLower();
             }
             Console.WriteLine($"You selected {playerChoice}");
             string compChoiceString = "";
